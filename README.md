@@ -10,6 +10,7 @@ The tasks will be broken down into a few sections:
 3. Accuracy : Classification and visualizing errors that uses features to classify any traffic light image. This function will take in an image and output a label. 4. Evaluate your model: The accuracy of the classifier must be >90% accurate and never classify any red lights as green; improve the accuracy of the classifier by changing existing features or adding new features. 
 
 Here are some sample images from the dataset (from left to right: red, green, and yellow traffic lights):
+![all lights](images/all_lights.png)
 
 ## The Data Set
 This traffic light dataset consists of 1484 number of color images in 3 categories - red, yellow, and green. As with most human-sourced data, the data is not evenly distributed among the types. 
@@ -35,6 +36,7 @@ All 1484 of the traffic light images are separated into training and testing dat
 ### Feature extraction
 - standardized image
 - HSV color-masked image
+    - ![masked_image](images/masked_images.png)
 - cropped image
 - brightness feature (using HSV color space): convert RGB to HSV and identify 3 different classes of traffic light
 ![all pipeline](images/feature_ext_steps.png)
@@ -59,3 +61,6 @@ All 1484 of the traffic light images are separated into training and testing dat
 ### Result
 - OpenCV test accuracy   : 96.6330%
 - Deep Learning(CNN) accuracy: 100.0000%
+
+![openCV result](images/tl_result_opencv.png)
+![CNN result](images/tl_result_cnn.png)
