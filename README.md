@@ -30,17 +30,18 @@ All 1484 of the traffic light images are separated into training and testing dat
     - Yellow light label: [0, 1, 0]
     - Green light label: [0, 0, 1]
 - Resize each image to the desired input size: 32x32px
+![pre-process](images/processing_steps.png)
 
 ### Feature extraction
 - standardized image
 - HSV color-masked image
 - cropped image
 - brightness feature (using HSV color space): convert RGB to HSV and identify 3 different classes of traffic light
-
+![all pipeline](images/feature_ext_steps.png)
 
 ### Apply CNN - Define Model 
 |Layer (type)      |           Output Shape   |           Param #   |
-=================================================================
+|-------|--------|--------|
 |batch_normalization_1 |(Batch (None, 32, 32, 3)   |      12       | 
 |conv2d_1 (Conv2D)    |        (None, 30, 30, 16)   |     448       |
 |max_pooling2d_1 |(MaxPooling2 (None, 15, 15, 16)   |     0         |
