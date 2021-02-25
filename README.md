@@ -62,5 +62,5 @@ All 1484 of the traffic light images are separated into training and testing dat
 - OpenCV test accuracy   : 96.6330%
 - Deep Learning(CNN) accuracy: 100.0000%
 
-![openCV result](images/tl_result_opencv.png)
+![openCV result](images/tf_result_opencv.png)
 ![CNN result](images/tl_result_cnn.png)
